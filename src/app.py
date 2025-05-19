@@ -2,6 +2,7 @@ from dash import Dash, html, dcc, dash_table
 from business.graph_manager import GraphManager
 
 app = Dash()
+server = app.server
 
 graph_manager = GraphManager()
 deaths_by_department_map_graph = graph_manager.generate_deaths_by_department_map_graph()
