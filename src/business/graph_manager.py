@@ -5,9 +5,9 @@ import unicodedata
 
 class GraphManager:
     def __init__(self):
-        self.mortality_df = pd.read_csv("./../../data/NoFetal2019.csv")
-        self.codes_df = pd.read_csv("./../../data/CodigosDeMuerte.csv")
-        self.divipola_df = pd.read_csv("./../../data/Divipola.csv")
+        self.mortality_df = pd.read_csv("https://raw.githubusercontent.com/Migeru500/mortality_dashboard/refs/heads/main/data/NoFetal2019.csv")
+        self.codes_df = pd.read_csv("https://raw.githubusercontent.com/Migeru500/mortality_dashboard/refs/heads/main/data/CodigosDeMuerte.csv")
+        self.divipola_df = pd.read_csv("https://raw.githubusercontent.com/Migeru500/mortality_dashboard/refs/heads/main/data/Divipola.csv")
 
     def generate_deaths_by_month_line_graph(self):
         mortality_df = self.mortality_df.copy(deep=True)
