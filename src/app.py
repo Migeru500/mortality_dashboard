@@ -17,7 +17,7 @@ app.layout = html.Div([
     html.H1("Estudiante: Miguel Ángel Manrique Téllez"),
     html.H2("Mapa de muertes por departamento en Colombia (2019)"),
     dcc.Graph(id='grafica-mapa-muertes-por-departamento', figure=deaths_by_department_map_graph),
-    html.H2("Muertes por Departamento en Colombia (2019)"),
+    html.H2("Muertes por Mes en Colombia (2019)"),
     dcc.Graph(id='grafica-muertes', figure=deaths_by_month_line_graph),
     html.H2("Ciudades más violentas en Colombia (2019)"),
     dcc.Graph(id='grafica-ciudades-mas-violentas', figure=most_violent_cities_bar_graph),
